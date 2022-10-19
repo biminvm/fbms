@@ -1,0 +1,119 @@
+
+<html>
+    <style>
+body 
+    {
+        background-image: url('img/fl4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      input{border-color: skyblue;}
+      textarea{border-color: skyblue;}
+      
+    </style>
+
+   
+<form action="print.html" method="POST">
+<center>
+    <head><table bgcolor="black" height="15%" width="100%"><th style="color:white; "><h1>Book My Flight</th></table>
+    </h1></head>
+    <body>
+        <table bgcolor="skyblue" height="15%" width="100%">
+    
+            <th><a href="index.html" style="color:black;">Home</a></th>
+            <th><a href="reg.html" style="color:black;">login </a></th>
+            <th><a href="reg1.html" style="color:black;">Register</a></th>
+            <th><a href="login.html" style="color:black;">about us</a></th>
+            <th><a href="con.html" style="color:black;">Contact Us</a></th>
+            
+            
+          </table>
+  
+<h2>Registeration</h2>
+<br><br>
+<table>
+<form action="/action_page.php">
+    <tr>
+  <td><label for="fname">First name:</label></td>
+ <td> <input type="text" id="fname" name="fname" ></td>
+</tr>
+<tr>
+    <td> <label for="lname">Last name:</label></td>
+        <td><input type="text" id="lname" name="lname" ></td>
+</tr>
+<tr>
+<td><p>Address:</p></td>
+        <td> <textarea rows="6" cols="20" id="lname" name="lname" ></textarea></td>
+</tr>
+<tr>
+
+    <td> <label for="lname">Date of Birth:</label></td>
+        <td><input type="date" id="dob"  ></td>
+</tr>
+ <tr> <td><p>Gender: </p></td>
+    <td><input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Male</label>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Female</label><br></td>
+    </tr>
+   
+    <tr><td><p>Email:</p></td>
+        <td><input type="text" id="email"      name="email" ></td>
+    </tr>
+    <tr><td><p>Username:</p></td>
+        <td><input type="text" id="lname" name="lname" ></td>
+    </tr>
+    <tr><td><p>Password:</p></td>
+        <td><input type="text" id="lname" name="lname" ></td>
+    </tr>
+    <tr> <td><p>Can we contact you ? </p></td>
+        <td><input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">Yes</label>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">No</label><br></td>
+        </tr>
+
+        <tr> <td><p>Communication Preference : </p></td>
+            <td><input type="checkbox" id="html" name="fav_language" value="HTML">
+          <label for="html">Email</label>
+          <input type="checkbox" id="css" name="fav_language" value="CSS">
+          <label for="css">SMS</label><br></td>
+          
+</table>
+<br><br>
+<input type="checkbox" id="css" name="fav_language" value="CSS">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+I agree the <a href="terms.html"  style="text-decoration: none;">terms and conditions</a> of the website.
+<br><br>
+<button style="  background-color:skyblue;
+border-radius: 12px;
+border: none;
+color: whitesmoke;
+text-align: center;
+width:20ex;height:6ex
+" onClick="javascript:saveData();">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button style="  background-color:skyblue;
+border-radius: 12px;
+border: none;
+color: whitesmoke;
+text-align: center;
+width:20ex;height:6ex
+">Reset</button>
+
+</form> 
+</center>
+<script>
+    function saveData()
+    {
+var fname=document.getElementById('fname').value;
+var lname=document.getElementById('lname').value;
+var dob=document.getElementById('dob').value;
+var email=document.getElementById('email').value;
+localStorage.setItem("fname",fname);
+localStorage.setItem("lname",lname);
+localStorage.setItem("dob",dob);
+localStorage.setItem("email",email);
+    }</script>
+
+
+</body>
+</html>

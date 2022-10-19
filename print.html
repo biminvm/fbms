@@ -1,0 +1,29 @@
+
+
+
+<html>
+    <head>
+        <title>Print</title>
+    </head>
+    <body>
+        Submitted Details:
+        <input type="button" name="btnshow" value="show data" onClick="javascript:showData();">
+    welcome <span id="fname"></span>
+    your email <span id="email"></span>
+  
+<script>
+    function showData()
+    {
+
+   
+var fname=localStorage.getItem('fname');
+var lname=localStorage.getItem('lname');
+var dob=localStorage.getItem('dob');
+var email=localStorage.getItem('email');
+
+document.getElementById('fname').innerHTML=fname+""+lname;
+document.getElementById('email').innerHTML=email;
+}
+</script>
+</body>
+</html>
